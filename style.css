@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #111;
+  font-family: Arial, sans-serif;
+}
+
+#levelText {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+#bulletText {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+button {
+  cursor: pointer;
+}
