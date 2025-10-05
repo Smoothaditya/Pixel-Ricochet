@@ -1,26 +1,62 @@
 body {
   margin: 0;
   overflow: hidden;
-  background-color: #111;
-  font-family: Arial, sans-serif;
+  background: #111;
+  font-family: monospace;
+  color: white;
 }
 
-#levelText {
+#gameCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ui {
   position: absolute;
   top: 10px;
   left: 10px;
-  color: white;
-  font-size: 24px;
-}
-
-#bulletText {
-  position: absolute;
-  top: 40px;
-  left: 10px;
-  color: white;
+  z-index: 2;
   font-size: 20px;
 }
 
-button {
+#startScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #222 40%, #000 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 5;
+}
+
+#startScreen h1 {
+  font-size: 64px;
+  color: crimson;
+  margin-bottom: 20px;
+}
+
+#startScreen p {
+  width: 60%;
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+#startScreen button {
+  background: crimson;
+  color: white;
+  font-size: 24px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 12px;
   cursor: pointer;
+  transition: background 0.3s;
+}
+
+#startScreen button:hover {
+  background: darkred;
 }
