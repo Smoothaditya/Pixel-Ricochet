@@ -21,5 +21,3 @@ A 2D browser-based game inspired by Ricochet Kills.
 - `index.html` – main HTML file
 - `style.css` – game styling
 - `game.js` – game logic using Matter.js
-
-
