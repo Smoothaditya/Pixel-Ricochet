@@ -2,13 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pixel Survivor Cannon Game</title>
+  <title>Cannon Sacrifice</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="levelText">Level 1</div>
-  <div id="bulletText">Bullets Left: 5</div>
+  <div id="startScreen">
+    <h1>Cannon Sacrifice</h1>
+    <p>Destroy all red targets before time runs out. Avoid the blue ones.<br>
+       You have limited bullets and one minute per level.<br>
+       Hold mouse to charge your shot.</p>
+    <button id="startButton">Start Game</button>
+  </div>
+
+  <div id="ui">
+    <div id="levelText"></div>
+    <div id="bulletText"></div>
+  </div>
+
   <canvas id="gameCanvas"></canvas>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
   <script src="game.js"></script>
 </body>
